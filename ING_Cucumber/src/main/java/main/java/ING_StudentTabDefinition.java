@@ -23,10 +23,10 @@ public class ING_StudentTabDefinition {
 			driver.navigate().to("http://isacportaluat.isac.org");
 			driver.findElement(
 					By.xpath(".//*[@id='_GAPLogin_WAR_GAPLoginportlet_:userregform:userid']"))
-					.sendKeys("sgebreti");
+					.sendKeys("");
 			driver.findElement(
 					By.xpath(".//*[@id='_GAPLogin_WAR_GAPLoginportlet_:userregform:password']"))
-					.sendKeys("Mamasina31");
+					.sendKeys("");
 			driver.findElement(
 					By.xpath(".//*[@id='_GAPLogin_WAR_GAPLoginportlet_:userregform']/fieldset/div/ul/li[3]/input"))
 					.click();
