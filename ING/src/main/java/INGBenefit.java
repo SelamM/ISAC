@@ -20,8 +20,8 @@ public class INGBenefit {
 	@Test
 	public static void main() throws Exception{
 		WebDriver driver;
-		String username = "updt1638";
-		String pasword = "Isacmap#1";
+		String username = "";
+		String pasword = "";
 		String secQue = "deerfield";
 		driver = createWebDriver(username, pasword, secQue);
 		String[][] data = excelRead();
