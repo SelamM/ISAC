@@ -1,0 +1,36 @@
+apply plugin: 'java'
+
+def runtime1="C://Users/sgebreti/dependecies"
+def libs = "C://Tomcat//apache-tomcat-7.0.70-windows-x64//apache-tomcat-7.0.70//lib"
+configurations{
+    cucumberRuntime{
+        extendsFrom testRuntime
+    }
+}
+
+task cucumber(){
+    dependsOn assemble, compileTestJava
+    doLast{
+        javaexec{
+            main = "cucumber.api.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = ['-f', 'html:build/reports/cucumber/', '-f', 'json:build/reports/cucumber/report.json', '--glue', 'main.java', 'src/test/java']
+        }
+    }
+}
+
+dependencies{	
+	compile fileTree(dir: runtime1, include:'*.jar')
+	 compile files('libs/tomcat-6.0.33-tomcat-juli.jar')
+	//testCompile 'info.cukes:cucumber-java:1.1.1'
+	//testCompile 'info.cukes:cucumber-junit:1.1.1'
+	//testCompile 'junit:junit:4.11'	
+	//testCompile 'org.seleniumhq.selenium:selenium-server-standalone:2.53.0'
+}
+
+repositories{
+	mavenCentral()
+	//maven{
+	//	url "http://repo.jenkins-ci.org/releases/"
+	//}
+}
