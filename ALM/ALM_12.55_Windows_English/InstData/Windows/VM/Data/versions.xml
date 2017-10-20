@@ -1,0 +1,25 @@
+<java class="java.beans.XMLDecoder"> 
+ <object class="com.hp.qc.install.core.VersionsBean">
+  <void property="releaseVersion"> 
+   <int>12</int> 
+  </void> 
+  <void property="minorVersion"> 
+   <int>5</int> 
+  </void> 
+  <void property="minorMinorVersion"> 
+   <int>5</int> 
+  </void> 
+  <void property="buildNumber"> 
+   <int>2635</int> 
+  </void> 
+  <void property="patchLevel"> 
+   <int>0</int> 
+  </void> 
+  <void property="privatePatchLevel"> 
+   <int>000</int> 
+  </void> 
+  <void property="consolidatedBuildNumber"> 
+   <int>113</int> 
+  </void> 
+ </object> 
+</java> 

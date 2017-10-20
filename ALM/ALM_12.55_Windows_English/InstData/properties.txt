@@ -1,0 +1,16 @@
+branch=ALM12/ALM1255
+alm_version=12.55.2635.0.0
+build_number=2635
+build.number=2635
+GIT_URL=ssh://git@mydtbld0005.hpeswlab.net:7999/alm/alm_mng.git
+svn_url=ssh://git@mydtbld0005.hpeswlab.net:7999/alm/alm_mng.git
+build_revision=c15974658b64ec7e8e7766acc6dbe4c28ce347e5
+build_date=07/20/2017
+ALM_ver=12
+ALM_SP=55
+consolidated_number=113
+APM=12.50.095
+MC_EXTENSION=1.00.10
+SPI=12.50.111
+consolidated.version=12.55.113.2635 
+nexus_label = 12.55.282-alm1255_RC5.c15974658b64ec7e8e7766acc6dbe4c28ce347e5  

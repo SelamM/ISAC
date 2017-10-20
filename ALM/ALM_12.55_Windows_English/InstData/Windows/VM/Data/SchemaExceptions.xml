@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<QC_EXCEPTIONS>
+
+	<exceptions>			
+<!-- ignore extra column
+		<ColumnMissing>
+			<object pattern="<col name pattern>" type="extra"/>
+		</ColumnMissing>
+-->
+
+<!-- ignore extra table
+		<TableMissing>	
+			<object pattern="<table name pattern>" type="extra"/>	
+		</TableMissing>			
+-->
+
+<!-- ignore extra view
+		<ViewMissing>
+			<object pattern="<view name pattern>" type="extra"/>
+		</ViewMissing>
+-->
+
+	</exceptions>
+
+</QC_EXCEPTIONS>
+
+
