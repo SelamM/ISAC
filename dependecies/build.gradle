@@ -1,0 +1,22 @@
+
+import org.isac.services.common.util.EmailSender;
+import org.isac.services.common.util.IsacServiceException;
+
+buildscript {
+   dependencies {
+      classpath files("D:\\SharedLibs\\Ant_Email\\isaccommon.jar")
+	  classpath files("D:\\SharedLibs\\Ant_Email\\mail-1.4.7.jar")
+	  classpath files("D:\\SharedLibs\\Ant_Email\\activation-1.1.1.jar")
+	  classpath files("D:\\SharedLibs\\Ant_Email\\commons-lang-2.3.jar")
+	  classpath files("D:\\SharedLibs\\Ant_Email\\commons-beanutils-1.8.0.jar")
+	  classpath files("D:\\SharedLibs\\Ant_Email\\log4j-1.2.15.jar")
+   }
+}
+
+
+task sendMail{
+	doLast{
+		System.setProperty("smtpHost", "smtpr.illinois.gov");
+		EmailSender.sendHtmlWithAttachment('naveen.kadiyala@isac.illinois.gov', 'naveen.kadiyala@isac.illinois.gov', 'naveen.kadiyala@isac.illinois.gov', 'naveen.kadiyala@isac.illinois.gov', 'Test', 'Test', "D:\\Jenkins\\jobs\\SendEmailTest\\workspace\\TestData.txt", "TestData.txt");
+	}
+}
